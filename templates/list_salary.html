@@ -1,0 +1,13 @@
+<table>
+  <thead>
+    <th>ID</th>
+    <th>Salario</th>
+  </thead>
+  {% for sal in salary %}
+  <tr>
+    <td>{{sal.id}}</td>
+    <td>{{sal.amound}}</td>
+    <td><a href="{% url "id_salary" sal.id %}">Actualizar</a></td>
+  </tr>
+  {% endfor %}
+</table>
